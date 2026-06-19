@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background-color: #1e1e2f;
+}
+
+.display {
+  color: white;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 20px;
+  width: 320px;
+  box-sizing: border-box;
+}
+
+.keypad {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #666;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:active,
+button.pressed {
+  background-color: lightgray;
+}
